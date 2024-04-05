@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  my-python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-python-app
