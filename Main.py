@@ -2,7 +2,11 @@
 import pandas as pd
 import streamlit as st
 import pickle
+<<<<<<< HEAD
 from Logger import BaseLogger
+=======
+from Utils.Logger import BaseLogger
+>>>>>>> origin/master
 
 # Initialize logger
 logger = BaseLogger(name='StreamlitLogger')
@@ -10,7 +14,11 @@ logger = BaseLogger(name='StreamlitLogger')
 # Load the pre-trained model
 @st.cache(allow_output_mutation=True)
 def load_model():
+<<<<<<< HEAD
     with open('model.pkl', 'rb') as model_file:
+=======
+    with open('D:\machineLearning\heart_attack_analysis\src\Experiments\model.pkl', 'rb') as model_file:
+>>>>>>> origin/master
         model = pickle.load(model_file)
     return model
 
